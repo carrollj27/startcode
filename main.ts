@@ -239,11 +239,12 @@ let enemy1 = sprites.create(img`
     `, SpriteKind.Player)
 enemy1.setStayInScreen(true)
 enemy1.setPosition(130, 15)
+enemy1.vy += randint(15, 70)
 fighter1.setScale(1.75, ScaleAnchor.Middle)
 enemy1.setScale(2, ScaleAnchor.Middle)
 game.onUpdate(function () {
 	
 })
 game.onUpdateInterval(100, function () {
-    enemy1.vy += randint(15, 70)
+	
 })
